@@ -4,6 +4,10 @@ class LandmarksController < ApplicationController
     erb :'landmarks/new'
   end
 
+  post '/landmarks' do
+    binding.pry
+  end
+
   get '/landmarks' do
     @landmarks = Landmark.all
     erb :'/landmarks/index'
